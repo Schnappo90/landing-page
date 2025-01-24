@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    /* outline: 2px solid red; */
+
 }
 
 body {
@@ -15,7 +15,6 @@ body {
     align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
-    /* padding-inline: 13rem; */
 }
 
 
@@ -51,9 +50,14 @@ a {
     color:#E5E7EB
 }
 
+a:hover {
+    text-decoration: none;
+    color:#ffffff
+}
+
+
 .cta-hero-btn {
     border: none;
-    display: block;
     background-color: #3882F6;
     color: #F9FAF8;
     padding: 0.5rem 2rem;
@@ -61,6 +65,10 @@ a {
     font-size: 1.1rem;
     font-weight: 600;
     
+}
+
+.cta-hero-btn:hover {
+    background-color: #3171d8;
 }
 
 .hero-section {
@@ -128,6 +136,7 @@ h2 {
     border: 4px solid #3882F6;
     border-radius: 1rem;
     margin-bottom: .5rem;
+    overflow: hidden;
 }
 
 .img-text-wrapper > p {
@@ -173,7 +182,7 @@ h2 {
     border-radius: 0.5rem;
 }
 
-.cta-signu-btn {
+.cta-signup-btn {
     background: transparent;
     border: 2px solid #F9FAF8;
     color: #F9FAF8;
@@ -181,6 +190,11 @@ h2 {
     border-radius: .5rem;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.cta-signup-btn:hover {
+    background-color: #ffffff;
+    color:#3882F6;
 }
 
 .cta-text-wrapper > p:nth-child(1) {
@@ -196,4 +210,8 @@ h2 {
 footer {
     padding: 2.62rem;
     color: #E5E7EB;
+}
+
+button {
+    cursor: pointer;
 }
