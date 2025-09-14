@@ -1,0 +1,304 @@
+:root {
+    --white: #F9FAF8;
+    --grey: #E5E7EB;
+    --dark-blue-bg: #1F2937;
+    --dark-grey-bg: #E5E7EB;
+    --cta-blue: #3882F6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+/* ---utility--- */
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+button {
+    border: hidden;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* -----Nav section----- */
+
+header {
+    width: 100%;
+    background: var(--dark-blue-bg);
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 500;
+}
+
+
+/* ----hero section----- */
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-blue-bg);
+}
+
+.hero-container {
+    display: flex;
+    padding-block: 120px;
+}
+
+.hero-left {
+    width: 100%;
+    padding-right: 4rem;
+    
+}
+
+.hero-right {
+    width: 100%;
+    background-image: url(/images/rayul-_M6gy9oHgII-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--white)
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    color: var(--grey)
+}
+
+.hero-section .hero-btn {
+    background-color: var(--cta-blue);
+    color: var(--white);
+}
+
+/* ----testimony section---- */
+
+.testimony-section {
+    text-align: center;
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.testimony-card {
+    max-width: 170px;
+
+}
+
+.img-container {
+    width: 100%;
+    max-width: 168px;
+    height: 168px;
+    aspect-ratio: 1 / 1;
+    border: 4px solid var(--cta-blue);
+    border-radius: 16px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.testimony-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimony-section h2 {
+    font-size: 36px;
+    margin-bottom: 2.5rem;
+    color: var(--dark-blue-bg)
+}
+
+/* ----quote section---- */
+
+.quote-section {
+    background-color: var(--dark-grey-bg);
+    width: 100%;
+    padding-block: 100px;
+}
+
+.quote-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-section blockquote {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--dark-blue-bg)
+}
+
+.quote-section p {
+    text-align: end;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--dark-blue-bg)
+}
+
+/* ---cta-section--- */
+
+
+.cta-wrapper {
+    width: 100%;
+    background: var(--cta-blue);
+    color: var(--white);
+    border-radius: 8px;
+    margin-block: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 7.5rem;
+}
+
+.cta-text-group {
+    padding-right: 1rem;
+}
+
+.cta-text-group h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem
+}
+
+.cta-text-group p {
+    color: var(--grey);
+    font-size: 1.1rem;
+}
+
+.cta-wrapper .cta-section-btn {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 0.4rem 1.8rem;
+    align-self: center;
+    font-size: 1.1rem;
+    text-wrap: nowrap;
+} 
+
+/* ----footer---- */
+
+footer {
+    width: 100%;
+    background-color: var(--dark-blue-bg);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* ------ hero section ------ */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding-block: 1rem 4rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-btn {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-left {
+        padding-right: 0;
+    }
+
+    .hero-right {
+        height: 200px;
+        border-radius: 12px;
+    }
+
+    /* ---testimony section---- */
+
+    .cards {
+        gap: 1.5rem;
+    }
+
+    /* ----quote section---- */
+
+    .quote-section {
+        padding-inline: 1.5rem;
+    }
+
+    .quote-wrapper blockquote, 
+    .quote-wrapper p  {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem
+    }
+
+    /* ---cta-section---- */
+
+    .cta-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-text-group {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
