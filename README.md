@@ -1,4 +1,4 @@
-# Landing Page Project
+# Landing Page Project (The Odin Project)
 
 A simple, responsive landing page showcasing a hero section with a background image and portrait images. This project demonstrates layout design using HTML and CSS.
 
